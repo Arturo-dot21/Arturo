@@ -12,10 +12,8 @@
     </header>
 
     <form id="myform">
-        <label for="person">type your Name:</label>
-        <input type="text" id="person" name="person" required>
 
-        <p>select your age:</p>
+        <p>Select your age:</p>
         <input type="radio" id="option-1" name="age" value="under-18">
         <label for="option-1">Under 18</label>
         <input type="radio" id="option-2" name="age" value="18-30">
@@ -83,6 +81,10 @@
     <hr>
     <p class="thanks">Now I wanna know about your experience with my family, if you have any.<br> Please write about it in the text area below.<br> I would love to read it!</p>
     <form action="https://formspree.io/f/mbdelzjq" method="POST">
+
+        <label for="person">Type your name:</label>
+        <input type="text" id="person" name="person" placeholder="Your Full Name" required>
+        <br><br>
         <textarea name="experience" id="experience" cols="50" rows="10" placeholder="write about your experience with my family"></textarea>
         <br><br>
         <input class="submit" type="submit" value="ENVIAR" id="submit2">
